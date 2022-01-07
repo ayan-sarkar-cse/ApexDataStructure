@@ -43,9 +43,10 @@ public class FirstAndLastOccurence {
 }
 
 // Code to check the implementation
-List<Integer> integerArray = new List<Integer> {1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4,4, 5, 5, 5, 6, 6, 6, 6, 6, 6};
+/* List<Integer> integerArray = new List<Integer> {1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4,4, 5, 5, 5, 6, 6, 6, 6, 6, 6};
 Integer key = 4;
 Integer low = FirstAndLastOccurence.findFirstAndLastOccurenceOfElement(integerArray, key, true);
 Integer high = FirstAndLastOccurence.findFirstAndLastOccurenceOfElement(integerArray, key, false);
 System.debug('Lower index ==> ' + low);
-System.debug('Higher index ==> ' + high);
+System.debug('Higher index ==> ' + high); */
+
