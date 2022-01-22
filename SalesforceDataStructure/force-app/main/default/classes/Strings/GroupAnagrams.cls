@@ -1,12 +1,16 @@
 public class GroupAnagrams {
   public static void groupAnagrams(List<String> inputString) {
-    Map<Integer, List<String>> output = new Map<Integer, List<String>>();
+    Map<String, List<String>> output = new Map<String, List<String>>();
     for (String input : inputString) {
-      Integer characterASCIISum = getWordToASCIISum(input);
-      if (output.containsKey(characterASCIISum)) {
-        output.get(characterASCIISum).add(input);
+      //   Integer characterASCIISum = getWordToASCIISum(input);
+      List<String> characters = input.split('');
+      characters.sort();
+      String sortedString = String.join(characters, '');
+      System.debug(sortedString);
+      if (output.containsKey(sortedString)) {
+        output.get(sortedString).add(input);
       } else {
-        output.put(characterASCIISum, new List<String>{ input });
+        output.put(sortedString, new List<String>{ input });
       }
     }
     System.debug(output.values());
@@ -22,6 +26,6 @@ public class GroupAnagrams {
 }
 
 /* GroupAnagrams.groupAnagrams(new List<String>{
-    'eat', 'tea', 'ate', 'ayan', 'naya', 'mad', 'dam', 'mda', 'ay', 'bz'
+    'eat', 'tea', 'ate', 'ayan', 'naya', 'mad', 'dam', 'mda', 'cc', 'bd'
 }); */
 
